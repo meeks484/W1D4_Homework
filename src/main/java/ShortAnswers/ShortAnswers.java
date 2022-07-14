@@ -1,3 +1,5 @@
+package ShortAnswers;
+
 public class ShortAnswers {
     /*
     1. Describe the Collections Type Hierarchy. What are the main interfaces and what are the differences between them?
