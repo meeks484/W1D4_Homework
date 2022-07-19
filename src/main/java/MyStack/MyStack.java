@@ -4,11 +4,11 @@ import java.lang.annotation.ElementType;
 import java.util.Arrays;
 
 public class MyStack  {
-    static final int GROWTH_SIZE = 5;
-    static int capacity;
-    static int element[] = new int[1];
-    static int elementCount = 0;
-    static void push(int data){
+    final int GROWTH_SIZE = 5;
+    int capacity;
+    int element[] = new int[1];
+    int elementCount = 0;
+    void push(int data){
         if (elementCount==element.length-1){
             capacity = element.length+GROWTH_SIZE;
             element= Arrays.copyOf(element,capacity);
@@ -19,14 +19,14 @@ public class MyStack  {
         System.out.println("Value "+data+" has been pushed");
     }
 
-    static int pop(){
+    int pop(){
         int topNumber = element[elementCount];
         element[elementCount] = 0;
         elementCount--;
         return topNumber;
     }
 
-    static int peek(){
+    int peek(){
         return element[elementCount];
     }
 
@@ -34,11 +34,11 @@ public class MyStack  {
     //
     //}
 
-    static int size(){
+    int size(){
         return elementCount;
     }
 
-    static boolean search(int val){
+    boolean search(int val){
         boolean found = false;
         for (int i = 0 ; i < elementCount ; i++){
             if (element[i]==val) {
@@ -51,7 +51,7 @@ public class MyStack  {
             return false;
         }
     }
-    public static void main(String[] args) {
+    public void main(String[] args) {
         push(25);
         push(15);
         push(10);
