@@ -26,7 +26,7 @@ public class ShortAnswers {
             2. LinkedList: A linear data structure. It has a group of nodes (its elements are called nodes).
                 Each node has a sequence, and elements are stored in the sequence. Each node has three fields: a data
                 field and two pointers to point to the next and previous nodes on the list. Does not need consecutive
-                memory to store its data.
+                memory to store its data. (does not impliment an array)
             3. Vector: Similar to the arrayList, it is sychronized and cannot have two threads access the objects at
                 the same time. This is perfect for multi-threaded applications.
      3. What are Queue interface implementations and what are the differences and when to use what?
