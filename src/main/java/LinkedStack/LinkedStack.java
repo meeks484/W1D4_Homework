@@ -11,6 +11,7 @@ public class LinkedStack {
         System.out.println("Value "+data+" has been pushed");
     }
 
+
     static int pop(){
         Node temp = head;
         head = head.next;
